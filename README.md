@@ -1,44 +1,44 @@
 ## Devtech Website
 
-Devtech ek static marketing site hai jo professional IT solutions, web development, CRM, cyber security aur digital design services ko highlight karta hai. Landing page `index.html` par multi-section layout hai jisme hero banner, services, projects, testimonials aur contact form shamil hain. Repository me privacy aur terms pages bhi included hain.
+Devtech is a marketing-focused static website that highlights professional IT services including web development, CRM solutions, cybersecurity, digital design, and more. The primary landing page (`index.html`) delivers a multi-section layout covering hero content, services, project highlights, testimonials, and contact information. Dedicated privacy and terms pages ship with the repository as well.
 
 ## Project Structure
 
-- `index.html` – primary landing page with navigation anchors (`#about`, `#services`, `#contact`).
-- `privacy-policy.html` aur `terms-and-conditions.html` – legal content pages.
-- `assets/` – saari CSS, JS, fonts aur images (Bootstrap, Swiper, Magnific Popup, custom styles).
-- `.gitignore` – common environment aur build outputs ignore karta hai.
+- `index.html` – main landing page with navigation anchors (`#about`, `#services`, `#contact`).
+- `privacy-policy.html` and `terms-and-conditions.html` – legal and compliance documentation.
+- `assets/` – bundled CSS, JS, fonts, and images (Bootstrap, Swiper, Magnific Popup, custom styles, brand assets).
+- `.gitignore` – standard ignore rules for environment-specific or build artifacts.
 
 ## Local Setup
 
-1. Repo clone ya download karein:
+1. Clone or download the repository:
    ```bash
    git clone git@github.com:akamaanullah/devtech.git
    cd devtech
    ```
-2. `index.html` ko browser me open karein.
+2. Open `index.html` directly in your browser.
 
-Ye pure static site hai, koi build step required nahi hai. Agar aap PHP-ready environment use kar rahe hain (jaise XAMPP), to project folder ko `htdocs` me place karke `http://localhost/devtech` visit kar sakte hain.
+Because the project is entirely static, no build steps are required. If you prefer to serve it through a PHP-capable stack such as XAMPP, copy the folder into `htdocs` and browse to `http://localhost/devtech`.
 
 ## Customization Tips
 
-- Branding aur copy ke liye `index.html` me relevant sections update karein.
-- Styling ke liye `assets/css/main.css` modify karein; har UI element unique classes use karta hai jisse CSS/JS targeting asaan hoti hai.
-- Images ko `assets/img/` ke andar same naming structure follow karte hue replace karein.
-- Icons ke liye Bootstrap Icons already bundle hain (`assets/css/all.min.css`).
+- Update copy and branding within `index.html`; sections use clear classes and IDs for easy editing.
+- Modify styling in `assets/css/main.css`; unique selectors keep CSS and JavaScript targeting straightforward.
+- Replace imagery inside `assets/img/` while preserving filenames or adjusting the HTML accordingly.
+- Bootstrap Icons are already included via `assets/css/all.min.css` for iconography needs.
 
 ## Deployment
 
-Static hosting platforms (Netlify, Vercel, GitHub Pages) ya kisi bhi standard web server par deploy kar sakte hain:
+You can deploy the site to any static hosting provider (Netlify, Vercel, GitHub Pages) or a conventional web server:
 
-1. Build step skip karein, seedha `assets` aur HTML files upload karein.
-2. Ensure karein ke root me `index.html` accessible ho, aur supporting assets relative paths maintain karein.
+1. Skip build steps—upload the HTML files together with the `assets` directory.
+2. Confirm `index.html` sits at the web root and relative asset paths remain intact.
 
 ## Contributing
 
-1. Nayi branch create karein: `git checkout -b feature/<feature-name>`.
-2. Changes karein, lint aur browser testing karein.
-3. Commit messages ko meaningful rakhein, phir pull request raise karein.
+1. Create a feature branch: `git checkout -b feature/<feature-name>`.
+2. Implement changes, lint where applicable, and test in the browser.
+3. Write descriptive commit messages and open a pull request for review.
 
-Agar kisi update me database schema me changes chahiye hon, to unke liye alag SQL alter file banane ka convention follow karein.
+For any database schema updates (if added later), maintain the convention of supplying separate SQL alter files.
 
