@@ -42,3 +42,7 @@ You can deploy the site to any static hosting provider (Netlify, Vercel, GitHub 
 
 For any database schema updates (if added later), maintain the convention of supplying separate SQL alter files.
 
+## Contact
+
+Questions or collaboration requests? Visit [amaanullah.com](https://amaanullah.com) or email [info@amaanullah.com](mailto:info@amaanullah.com).
+
